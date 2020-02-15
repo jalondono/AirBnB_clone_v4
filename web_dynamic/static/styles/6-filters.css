@@ -58,6 +58,10 @@
 	font-weight: 400;
 	font-size: 14px;
 	margin: 7px 0 3px 40px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
 }
 
 /**
