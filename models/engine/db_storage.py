@@ -34,7 +34,7 @@ class DBStorage:
             creates the engine self.__engine
         """
         self.__engine = create_engine(
-            'mysql+mysqldb://{}:{}@{}/{}'.format(
+            'mysql+mysqldb://{}:{}@{}/{}?charset=utf8'.format(
                 os.environ.get('HBNB_MYSQL_USER'),
                 os.environ.get('HBNB_MYSQL_PWD'),
                 os.environ.get('HBNB_MYSQL_HOST'),
